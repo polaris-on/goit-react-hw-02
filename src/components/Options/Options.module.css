@@ -1,0 +1,23 @@
+.button {
+  background: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  color: #0ff;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+}
+
+.button:hover {
+  background: #0ff;
+  color: #1a1a1a;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: start;
+  padding-left: 25%;
+}
