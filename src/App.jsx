@@ -30,6 +30,7 @@ function App() {
         neutral: 0,
         bad: 0,
       });
+      return;
     }
     setFeedbacks((prevFeedbacks) => ({
       ...prevFeedbacks,
