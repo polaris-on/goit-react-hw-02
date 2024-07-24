@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import s from "./Options.module.css";
 
-const Options = ({ onFeedback, totalFeedback }) => {
+const Options = ({ onFeedback, onReset, totalFeedback }) => {
   return (
     <div className={clsx(s.buttonWrapper)}>
       <button className={clsx(s.button)} onClick={() => onFeedback("good")}>
@@ -14,7 +14,7 @@ const Options = ({ onFeedback, totalFeedback }) => {
         Bad
       </button>
       {totalFeedback > 0 && (
-        <button className={clsx(s.button)} onClick={() => onFeedback("reset")}>
+        <button className={clsx(s.button)} onClick={() => onReset()}>
           Reset
         </button>
       )}
